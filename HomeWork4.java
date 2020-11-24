@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class HomeWork4 {
 	public static void main(String [] args) {
+		System.out.println("hello");
 		multipleTable();
 	}
 	public static void multipleTable() {
