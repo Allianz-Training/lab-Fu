@@ -1,0 +1,32 @@
+class - Category
+
+Property
+ - link category
+ - category name
+ - category picture
+Action
+ - link to category
+ - highlight category
+ - show selelected category
+
+class - menu
+
+Property 
+ - menu linnk
+ - menu name
+ - font
+Action
+ - click menu -> link to menu
+ - hover -> highlight menu name
+ - show menu name in title
+
+class - search bar
+
+Property
+ - search icon
+ - width
+ - hight
+Action
+ - show search history
+ - type something -> show auto complete search
+ - enter search word -> show item that match of search word 
