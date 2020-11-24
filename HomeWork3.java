@@ -128,5 +128,18 @@ public class HomeWork3 {
 			}
 			System.out.println();
 		}
+		row = 0;
+		count = n-1;
+		while(row<n-1) {
+			int col = 0;
+			while(col<n) {
+				if(col>=count && col!=n) System.out.print("-");
+				else System.out.print(count);
+				col++;
+			}
+			System.out.println();
+			row++;
+			count--;
+		}	
 	}
 }
