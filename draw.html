@@ -7,8 +7,6 @@
 </head>
 <body>
     <script>
-        const num = prompt("Enter number");
-        draw(num);
         function draw(n) {
             let star = "";
             for(let i=0; i<n ; i++) {
@@ -16,6 +14,235 @@
             }
             alert(star);
         }
+        function draw2(n) {
+            let star = "";
+            for (let i=0; i<n ; i++) {
+                for (let j = 0; j < n; j++) {
+                    star += "*";
+                }
+                star+="\n";
+            }
+            alert(star);
+        }
+        function draw3(n) {
+            let number = "";
+            for (let i=0; i<n ; i++) {
+                for (let j = 1; j <= n; j++) {
+                    number += j;
+                }
+                number+="\n";
+            }
+            alert(number);
+        }
+        function draw4(n) {
+            let number = "";
+            for (let i=0; i+1 <= n ; i++) {
+                for (let j = 0; j < n; j++) {
+                    number += i;
+                }
+                number+="\n";
+            }
+            alert(number);
+        }
+        function draw5(n) {
+            let n2 = n;
+            let number = "";
+            for (let i=0; i<n ; i++) {
+                for (let j = 0; j+1 <= n; j++) {
+                    number += n2;
+                }
+                n2--;
+                number+="\n";
+            }
+            alert(number);
+        }
+        function draw6(n) {
+            let count = 0;
+            let number = "";
+            for (let i=0; i<n ; i++) {
+                for (let j = 0; j+1 <= n; j++) {
+                    count++
+                    number += count;
+                }
+                number+="\n";
+            }
+            alert(number);
+        }
+        function draw7(n) { 
+            let count = n**2;
+            let number = "";
+            for (let i=0; i<n ; i++) {
+                for (let j = 0; j+1 <= n; j++) {
+                    number += count;
+                    count--;
+                }
+                number+="\n";
+            }
+            alert(number);
+        }
+        function draw8(n) {
+            let num=""; 
+          for(let i=0;i<n;i++){
+            num =num+i*2;
+            num+="\n";
+
+          }
+          alert(num);
+
+        }
+
+        function draw9(n) {
+          let num=""; 
+          for(let i=1;i<=n;i++){    
+            num =num+i*2;
+            num+="\n";
+          }
+          alert(num);
+        }
+
+        function draw10(n) {
+        //   let num = ""; 
+        //  for(let i=1;i<n;i++){
+        //      for(let j=0;j<n;j++){
+        //         num = j + i + "";
+        //     }
+        //     num+="\n";
+        //  }
+        //  alert(num);
+        }
+
+        function draw11(n) {
+            let dr = "";
+            for(let i=0; i<n ; i++) {
+                for (let j = 0; j < n; j++) {
+                    if(i==j) dr+="_";
+                    else dr+="*";
+                }
+                dr+="\n";
+            }
+            alert(dr);
+        }
+
+        function draw12(n) {
+            let dr = "";
+            let n2 = n;
+            for(let i=0; i<n ; i++) {
+                for (let j = 0; j < n; j++) {
+                    if(n2==j+1) dr+="_";
+                    else dr+="*";
+                }
+                n2--;
+                dr+="\n";
+            }
+            alert(dr);
+        }
+
+        function draw13(n) {
+            let dr = "";
+            let count = 1;
+            for(let i=0; i<n ; i++) {
+                for (let j = 0; j < n; j++) {
+                    if(count>j) dr+="*";
+                    else dr+="_";
+                }
+                count++;
+                dr+="\n";
+            }
+            alert(dr);
+        }
+
+        function draw14(n) {
+            let dr = "";
+            let count = n;
+            for(let i=0; i<n ; i++) {
+                for (let j = 0; j < n; j++) {
+                    if(count>j) dr+="*";
+                    else dr+="_";
+                }
+                count--;
+                dr+="\n";
+            }
+            alert(dr);
+        }
+
+        function draw15(n) {
+            let dr = "";
+            let count = 1;
+            for(let i=0; i<n ; i++) {
+                for (let j = 0; j < n; j++) {
+                    if(count>j) dr+="*";
+                    else dr+="_";
+                }
+                count++;
+                dr+="\n";
+            }
+            count = n-1;
+            for(let i=0; i<n-1 ; i++) {
+                for (let j = 0; j < n; j++) {
+                    if(count>j) dr+="*";
+                    else dr+="_";
+                }
+                count--;
+                dr+="\n";
+            }
+            alert(dr);
+        }
+
+        function draw17(n) {
+            let dr = "";
+            let count = n-1;
+            for(let i=0; i<n ; i++) {
+                for (let j = 0; j < n; j++) {
+                    if(count<j+1) dr+="*";
+                    else dr+="_";
+                }
+                count--;
+                dr+="\n";
+            }
+            alert(dr);
+        }
+
+        function draw18(n) {
+            let dr = "";
+            let count = 0;
+            for(let i=0; i<n ; i++) {
+                for (let j = 0; j < n; j++) {
+                    if(count<=j) dr+="*";
+                    else dr+="_";
+                }
+                count++;
+                dr+="\n";
+            }
+            alert(dr);
+        }
+
+        function draw19(n) {
+            let dr = "";
+            let count = n-1;
+            for(let i=0; i<n ; i++) {
+                for (let j = 0; j < n; j++) {
+                    if(count<j+1) dr+="*";
+                    else dr+="_";
+                }
+                count--;
+                dr+="\n";
+            }
+            count = 0;
+            for(let i=0; i<n-1 ; i++) {
+                for (let j = 0; j < n; j++) {
+                    if(count<j) dr+="*";
+                    else dr+="_";
+                }
+                count++;
+                dr+="\n";
+            }
+            alert(dr);
+        }
+
+        
+        const num = prompt("Enter number");
+        draw19(num);
+
     </script>
 </body>
 </html>
