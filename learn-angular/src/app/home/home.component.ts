@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  title: string
+  
+  constructor() {
+    console.log(`[Constructor] - title value = ${this.title}`)
+   }
 
   ngOnInit(): void {
+    console.log(`[OnInit] - title value = ${this.title}`)
   }
 
 }
